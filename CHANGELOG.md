@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.2.2
+
+[compare changes](https://github.com/your-org/my-module/compare/v0.0.3...v0.2.2)
+
+### 🩹 Fixes
+
+- Added build config stub ([81287fb](https://github.com/your-org/my-module/commit/81287fb))
+
+### ❤️ Contributors
+
+- Amrit <amrit@scalar.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/your-org/my-module/compare/v0.0.2...v0.0.3)
