@@ -3,6 +3,7 @@ import { ModernLayout, parse } from '@scalar/api-reference'
 import { reactive, ref, toRaw } from 'vue'
 import { useHead, useRequestURL, useSeoMeta } from '#imports'
 import type { Configuration } from '~/src/types'
+import '@scalar/api-reference/index.css'
 
 import './nuxt-theme.css'
 
