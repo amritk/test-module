@@ -34,6 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
     // Ensure we transpile api-reference css
     _nuxt.options.build.transpile.push("@scalar/api-reference");
 
+    // Check if it exists and push else assign it
     _nuxt.options.vite.optimizeDeps = {
       include: ["debug", "extend", "stringify-object", "rehype-highlight"],
     };
