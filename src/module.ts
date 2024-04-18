@@ -34,10 +34,8 @@ export default defineNuxtModule<ModuleOptions>({
     // Ensure we transpile api-reference css
     _nuxt.options.build.transpile.push("@scalar/api-reference");
 
-    _nuxt.options.vite.resolve = { alias: { debug: "debug-esm" } };
     _nuxt.options.vite.optimizeDeps = {
-      include: ["esm-dep > cjs-dep", "debug"],
-      needsInterop: ["debug"],
+      include: ["debug", "extend", "stringify-object", "rehype-highlight"],
     };
 
     // Also check for Nitro OpenAPI auto generation
