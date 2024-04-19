@@ -35,9 +35,14 @@ export default defineNuxtModule<ModuleOptions>({
     _nuxt.options.build.transpile.push("@scalar/api-reference");
 
     // Check if it exists and push else assign it
-    _nuxt.options.vite.optimizeDeps = {
-      include: ["debug", "extend", "stringify-object", "rehype-highlight"],
-    };
+    _nuxt.options.vite.optimizeDeps ||= {};
+    _nuxt.options.vite.optimizeDeps.include ||= [];
+    _nuxt.options.vite.optimizeDeps.include.push(
+      "debug",
+      "extend",
+      "stringify-object",
+      "rehype-highlight",
+    );
 
     // Also check for Nitro OpenAPI auto generation
     _nuxt.hook("nitro:config", (config) => {
